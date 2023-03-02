@@ -1,10 +1,15 @@
-import { BackgroundInmg } from "../styles/loginScreen.styles";
+import { BackgroundInmg, ContainerLogin, LimitContainer, LogoImage, ContainerLoginScreen } from "../styles/loginScreen.styles";
 
 
 export function LoginScreen() {
     return (
-        <div>
+        <ContainerLoginScreen>
             <BackgroundInmg src="./background.png"/>
-        </div>
+            <ContainerLogin>
+            <LimitContainer>
+                <LogoImage src="./logo.png"/>
+            </LimitContainer> 
+            </ContainerLogin>
+        </ContainerLoginScreen>
     )
 }
